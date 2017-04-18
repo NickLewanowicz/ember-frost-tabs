@@ -1,4 +1,31 @@
+$frost-tab-active-border: $frost-color-blue-1;
+$frost-tab-active-text: $frost-color-grey-2;
+
 .frost-tabs {
+  .frost-button {
+    &.tab {
+      height: 35px;
+      padding: 0;
+      cursor: pointer;
+
+      .text {
+        padding: 2px 20px;
+        border-right: 1px solid $frost-color-lgrey-1;
+        color: $frost-color-grey-5;
+        font-size: $frost-font-s;
+      }
+
+      &.active {
+        border-bottom: 2px solid $frost-tab-active-border;
+
+        .text {
+          margin-bottom: -2px;
+          color: $frost-color-grey-2;
+        }
+      }
+    }
+  }
+
   .tab-nav {
     display: flex;
     flex-direction: row;
